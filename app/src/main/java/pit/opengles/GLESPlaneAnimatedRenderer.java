@@ -19,6 +19,8 @@ import javax.microedition.khronos.opengles.GL10;
 
 public class GLESPlaneAnimatedRenderer implements GLSurfaceView.Renderer {
 
+    private static final float MAX_PARALLAX = 0.1f;
+
     private Context _mContext;
     private Shader _mShader;
     private FloatBuffer _mVertexBuffer;
@@ -224,6 +226,16 @@ public class GLESPlaneAnimatedRenderer implements GLSurfaceView.Renderer {
 
         _mOffset.x += (x * (0.001f));
         _mOffset.y -= (y * (0.001f));
+        if (_mOffset.x < -MAX_PARALLAX) {
+            _mOffset.x = -MAX_PARALLAX;
+        } else if (_mOffset.x > MAX_PARALLAX) {
+            _mOffset.x = MAX_PARALLAX;
+        }
+        if (_mOffset.y < -MAX_PARALLAX) {
+            _mOffset.y = -MAX_PARALLAX;
+        } else if (_mOffset.y > MAX_PARALLAX) {
+            _mOffset.y = MAX_PARALLAX;
+        }
     }
 
     private FloatBuffer floatToBuffer(float[] array)
