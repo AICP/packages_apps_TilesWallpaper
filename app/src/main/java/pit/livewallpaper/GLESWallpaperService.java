@@ -165,18 +165,18 @@ public abstract class GLESWallpaperService extends WallpaperService
         @Override
         public void onOffsetsChanged (float xOffset, float yOffset, float xOffsetStep, float yOffsetStep, int xPixelOffset, int yPixelOffset)
         {
-            int mult = 2;
-            if(previousOffset < xPixelOffset) mult *= -1;
-            int x = 0, y = 0;
+            int x, y;
             if(getResources().getConfiguration().orientation != Configuration.ORIENTATION_PORTRAIT)
             {
                 x = 0;
-                y = mult;
+                y = previousOffset - xPixelOffset;
+                y *= 0.1;
             }
             else
             {
                 y = 0;
-                x = mult;
+                x = previousOffset - xPixelOffset;
+                x *= 0.1;
             }
 
             if(_rendererHasBeenSet) _mSurfaceView._mRenderer.parallaxMove(x, y, _mSurfaceView.reversed, true);
