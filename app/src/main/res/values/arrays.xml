@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="motions" translatable="false">
+        <item>@string/straight</item>
+        <item>@string/eight</item>
+        <item>@string/rand</item>
+    </string-array>
+    <string-array name="motion_values" translatable="false">
+        <item>straight</item>
+        <item>8</item>
+        <item>random</item>
+    </string-array>
+</resources>

@@ -1,8 +1,9 @@
 package pit.livewallpaper;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.opengl.GLSurfaceView;
+import android.preference.PreferenceManager;
+
 import pit.opengles.GLESPlaneAnimatedRenderer;
 
 /**
@@ -17,14 +18,14 @@ public class ColloredWallpaperService extends OpenGLESWallpaperService {
     @Override
     GLSurfaceView.Renderer getGLESRenderer() {
         _mRenderer = new GLESPlaneAnimatedRenderer(this);
-        SharedPreferences prefs = getSharedPreferences("Info", Context.MODE_PRIVATE);
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         String color = prefs.getString("color", "COLORFUL");
         _mRenderer.switchColors(color);
-        Float animSpeed = prefs.getFloat("animSpeed", 0.2f);
+        Float animSpeed = prefs.getInt("animSpeed1", 20) * 0.01f;
         _mRenderer.changeAnimationSpeed(animSpeed);
-        String motion = prefs.getString("motion", "straight");
+        String motion = prefs.getString("motion", "random");
         _mRenderer.changeMotion(motion);
-        boolean sensors = prefs.getBoolean("sensors", false);
+        boolean sensors = prefs.getBoolean("sensors", true);
         _mEngine.activateSensors(sensors);
         return  _mRenderer;
     }

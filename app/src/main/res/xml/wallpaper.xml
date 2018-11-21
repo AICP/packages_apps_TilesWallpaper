@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <wallpaper xmlns:android="http://schemas.android.com/apk/res/android"
-    android:thumbnail="@drawable/thumbnail"
-    android:settingsActivity="pit.opengles.WallpaperMainActivity"/>
+    android:thumbnail="@mipmap/ic_launcher"
+    android:settingsActivity="com.aicp.livewallpaper.SettingsActivity"/>

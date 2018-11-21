@@ -32,17 +32,9 @@ public class GLESPlaneAnimatedRenderer implements GLSurfaceView.Renderer {
     private Transform _mLightTransform = new Transform(_mLightPosition.x, _mLightPosition.y, _mLightPosition.z, 1, 1, 1, 0.1f,0.1f ,0.1f ,0);
     private Transform _mPlaneTransform = new Transform(_mPlanePosition.x, _mPlanePosition.y, _mPlanePosition.z, 1, 1, 1,1.25f, 1.25f,1 ,0);
     private final int sizeOfFloat = 4;
-    private int _mAutumn = 0;
-    private int _mPink = 0;
-    private int _mWinterWonderland = 0;
-    private int _mColorful = 0;
-    private int _mRed = 0;
-    private int _mGreen = 0;
-    private int _mBlue = 0;
     private int _mTexture = 0;
     private int _mMask = 0;
     private int _mBump = 0;
-    private boolean red = false, blue = false, green = false, colorful  = true, pink = false, autumn = false, winterwonderland = false;
     private boolean straight = true, eight = false, random = false;
     private Vector2f _mOffset = new Vector2f(0, 0);
 
@@ -86,29 +78,9 @@ public class GLESPlaneAnimatedRenderer implements GLSurfaceView.Renderer {
         GLES20.glVertexAttribPointer(1, 2, GLES20.GL_FLOAT, false, 0, _mTexCoordBuffer);
 
         _mMask = ResourceLoader.loadTexture(_mContext, R.drawable.mask);
-        _mRed = ResourceLoader.loadTexture(_mContext, R.drawable.red);
-        _mBlue = ResourceLoader.loadTexture(_mContext, R.drawable.blue);
-        _mGreen = ResourceLoader.loadTexture(_mContext, R.drawable.green);
-        _mColorful = ResourceLoader.loadTexture(_mContext, R.drawable.colorful);
-        _mPink = ResourceLoader.loadTexture(_mContext, R.drawable.pink);
-        _mAutumn = ResourceLoader.loadTexture(_mContext, R.drawable.autumn);
-        _mWinterWonderland = ResourceLoader.loadTexture(_mContext, R.drawable.winterwonderland);
+        _mTexture = ResourceLoader.loadTexture(_mContext, R.drawable.aicp);
         _mBump = ResourceLoader.loadTexture(_mContext, R.drawable.bump);
 
-        if(red)
-            _mTexture = _mRed;
-        else if(green)
-            _mTexture = _mGreen;
-        else if(blue)
-            _mTexture = _mBlue;
-        else if(colorful)
-            _mTexture = _mColorful;
-        else if(pink)
-            _mTexture = _mPink;
-        else if(autumn)
-            _mTexture = _mAutumn;
-        else if(winterwonderland)
-            _mTexture = _mWinterWonderland;
     }
 
     @Override
@@ -246,46 +218,10 @@ public class GLESPlaneAnimatedRenderer implements GLSurfaceView.Renderer {
         return fb;
     }
 
+    @Deprecated
     public void switchColors(String newColor)
     {
-        switch (newColor)
-        {
-            case "RED":
-                _mTexture = _mRed;
-                red = true;
-                blue = green = colorful = winterwonderland = pink = autumn = false;
-                break;
-            case "BLUE":
-                _mTexture = _mBlue;
-                blue = true;
-                red = green = colorful = winterwonderland = pink = autumn = false;
-                break;
-            case "GREEN":
-                _mTexture = _mGreen;
-                green = true;
-                red = blue= colorful = winterwonderland = pink = autumn = false;
-                break;
-            case "COLORFUL":
-                _mTexture = _mColorful;
-                colorful = true;
-                red = green = blue = winterwonderland = pink = autumn = false;
-                break;
-            case "PINK":
-                _mTexture = _mPink;
-                pink = true;
-                red = green = blue = colorful = winterwonderland = autumn = false;
-                break;
-            case "AUTUMN":
-                _mTexture = _mAutumn;
-                autumn = true;
-                red = green = blue = colorful = winterwonderland = pink = false;
-                break;
-            case "WINTER WONDERLAND":
-                _mTexture = _mWinterWonderland;
-                winterwonderland = true;
-                red = green = blue = colorful = pink = autumn = false;
-                break;
-        }
+        // Removed
     }
 
     public void changeAnimationSpeed(float newSpeed)

@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.ConfigurationInfo;
 import android.opengl.GLSurfaceView;
+import android.preference.PreferenceManager;
 import android.view.SurfaceHolder;
 import pit.opengles.GLESPlaneAnimatedRenderer;
 
@@ -34,7 +35,7 @@ public abstract class OpenGLESWallpaperService extends GLESWallpaperService
         {
             super.onCreate(sH);
 
-            _mPrefs = getSharedPreferences("Info", Context.MODE_PRIVATE);
+            _mPrefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 
             _mPrefs.registerOnSharedPreferenceChangeListener(this);
 
@@ -62,14 +63,13 @@ public abstract class OpenGLESWallpaperService extends GLESWallpaperService
         {
             if(isValidGLES())
             {
-                if(prefs != getSharedPreferences("Info", Context.MODE_PRIVATE)) return;
                 String color = prefs.getString("color", "COLORFUL");
                 ((GLESPlaneAnimatedRenderer) _mRenderer).switchColors(color);
-                Float animSpeed = prefs.getFloat("animSpeed", 0.2f);
+                Float animSpeed = prefs.getInt("animSpeed1", 20) * 0.01f;
                 ((GLESPlaneAnimatedRenderer) _mRenderer).changeAnimationSpeed(animSpeed);
-                String motion = prefs.getString("motion", "straight");
+                String motion = prefs.getString("motion", "random");
                 ((GLESPlaneAnimatedRenderer) _mRenderer).changeMotion(motion);
-                boolean sensors = prefs.getBoolean("sensors", false);
+                boolean sensors = prefs.getBoolean("sensors", true);
                 this.activateSensors(sensors);
             }
         }

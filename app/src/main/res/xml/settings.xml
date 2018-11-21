@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="motion"
+        android:title="@string/motion"
+        android:entries="@array/motions"
+        android:entryValues="@array/motion_values"
+        android:defaultValue="random"/>
+    <SwitchPreference
+        android:key="sensors"
+        android:title="@string/sensors"
+        android:defaultValue="true" />
+    <SeekBarPreference
+        android:key="animSpeed1"
+        android:title="@string/animSpeed"
+        android:defaultValue="20"
+        android:min="10"
+        android:max="100" />
+
+    <PreferenceCategory
+        android:title="@string/about">
+        <Preference
+            android:title="@string/original_app"
+            android:summary="@string/original_app_summary">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="@string/original_app_link" />
+        </Preference>
+        <Preference
+            android:title="@string/license"
+            android:summary="@string/license_summary">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="@string/license_link" />
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>
