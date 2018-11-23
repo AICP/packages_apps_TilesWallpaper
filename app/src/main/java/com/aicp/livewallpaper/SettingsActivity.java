@@ -4,8 +4,6 @@ import android.app.ActionBar;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import pit.opengles.R;
-
 public class SettingsActivity extends PreviewActivity {
 
     @Override

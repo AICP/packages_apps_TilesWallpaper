@@ -7,8 +7,6 @@ import android.preference.PreferenceFragment;
 
 import java.util.Arrays;
 
-import pit.opengles.R;
-
 public class SettingsFragment extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 

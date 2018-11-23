@@ -13,6 +13,8 @@ import java.nio.FloatBuffer;
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
+import com.aicp.livewallpaper.R;
+
 /**
  * Created by paulh on 13.10.2017.
  */

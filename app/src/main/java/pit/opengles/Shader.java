@@ -3,6 +3,8 @@ package pit.opengles;
 import android.content.Context;
 import android.opengl.GLES20;
 
+import com.aicp.livewallpaper.R;
+
 /**
  * Created by paulh on 11.10.2017.
  */

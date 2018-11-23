@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="pit.opengles">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.aicp.livewallpaper">
     <uses-feature   android:glEsVersion="0x20000"
         android:required="true" />
     <uses-feature android:name="android.software.live_wallpaper" />

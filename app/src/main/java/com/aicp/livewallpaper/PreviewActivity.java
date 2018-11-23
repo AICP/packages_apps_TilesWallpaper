@@ -10,7 +10,6 @@ import android.preference.PreferenceManager;
 
 import pit.opengles.GLESPlaneAnimatedRenderer;
 import pit.opengles.GLESPlaneAnimatedSurfaceView;
-import pit.opengles.R;
 
 public class PreviewActivity extends Activity
         implements SharedPreferences.OnSharedPreferenceChangeListener {
