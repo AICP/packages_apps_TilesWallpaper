@@ -29,7 +29,7 @@ public class GLESPlaneAnimatedRenderer implements GLSurfaceView.Renderer {
     private FloatBuffer _mTexCoordBuffer;
     private float _mAnimationSpeed = 0.5f;
     private Camera _mCamera;
-    private Vector3f _mLightPosition = new Vector3f(0, 0, -1);;
+    private Vector3f _mLightPosition = new Vector3f(0, 0, -0.99f);
     private Vector3f _mPlanePosition = new Vector3f(0, 0, 0);
     private Transform _mLightTransform = new Transform(_mLightPosition.x, _mLightPosition.y, _mLightPosition.z, 1, 1, 1, 0.1f,0.1f ,0.1f ,0);
     private Transform _mPlaneTransform = new Transform(_mPlanePosition.x, _mPlanePosition.y, _mPlanePosition.z, 1, 1, 1,1.25f, 1.25f,1 ,0);
