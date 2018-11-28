@@ -1,5 +1,7 @@
 package pit.livewallpaper;
 
+import android.annotation.TargetApi;
+import android.app.WallpaperColors;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.drawable.GradientDrawable;
@@ -13,6 +15,8 @@ import android.support.v7.widget.LinearLayoutCompat;
 import android.util.Log;
 import android.view.OrientationEventListener;
 import android.view.SurfaceHolder;
+
+import com.aicp.livewallpaper.R;
 
 import pit.opengles.GLESPlaneAnimatedRenderer;
 
@@ -242,6 +246,12 @@ public abstract class GLESWallpaperService extends WallpaperService
         protected void setPreserveEGLContextOnPause(boolean preserve)
         {
             _mSurfaceView.setPreserveEGLContextOnPause(preserve);
+        }
+
+        @TargetApi(27)
+        @Override
+        public WallpaperColors onComputeColors() {
+            return WallpaperColors.fromDrawable(getDrawable(R.drawable.aicp));
         }
     }
 }
