@@ -35,7 +35,8 @@ public abstract class OpenGLESWallpaperService extends GLESWallpaperService
         {
             super.onCreate(sH);
 
-            _mPrefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+            _mPrefs = PreferenceManager.getDefaultSharedPreferences(
+                    getApplicationContext().createDeviceProtectedStorageContext());
 
             _mPrefs.registerOnSharedPreferenceChangeListener(this);
 

@@ -38,8 +38,8 @@ public class PreviewActivity extends Activity
     protected void onResume() {
         super.onResume();
 
-        SharedPreferences prefs =
-                PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(
+                getApplicationContext().createDeviceProtectedStorageContext());
         prefs.registerOnSharedPreferenceChangeListener(this);
         onSharedPreferenceChanged(prefs, null);
     }
@@ -48,7 +48,8 @@ public class PreviewActivity extends Activity
     protected void onPause() {
         super.onPause();
 
-        PreferenceManager.getDefaultSharedPreferences(getApplicationContext())
+        PreferenceManager.getDefaultSharedPreferences(
+                        getApplicationContext().createDeviceProtectedStorageContext())
                 .unregisterOnSharedPreferenceChangeListener(this);
     }
 
