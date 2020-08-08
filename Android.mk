@@ -16,4 +16,22 @@ LOCAL_PACKAGE_NAME := TilesWallpaper
 
 LOCAL_SDK_VERSION := current
 
+LOCAL_REQUIRED_MODULES := TilesWallpaperOverlay
+
 include $(BUILD_PACKAGE)
+
+# Overlay to set component name of the default wallpaper
+include $(CLEAR_VARS)
+
+LOCAL_RRO_THEME := WallpaperOverlay
+
+LOCAL_PRODUCT_MODULE := true
+
+# LOCAL_SRC_FILES := $(call all-subdir-java-files, overlay)
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/overlay/res
+LOCAL_MANIFEST_FILE := overlay/AndroidManifest.xml
+
+LOCAL_PACKAGE_NAME := TilesWallpaperOverlay
+LOCAL_SDK_VERSION := current
+
+include $(BUILD_RRO_PACKAGE)
