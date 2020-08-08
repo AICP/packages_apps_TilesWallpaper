@@ -11,7 +11,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.opengl.GLSurfaceView;
 import android.service.wallpaper.WallpaperService;
-import android.support.v7.widget.LinearLayoutCompat;
+import androidx.appcompat.widget.LinearLayoutCompat;
 import android.util.Log;
 import android.view.OrientationEventListener;
 import android.view.SurfaceHolder;

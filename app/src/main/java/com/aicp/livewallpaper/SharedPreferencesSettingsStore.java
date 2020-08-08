@@ -19,7 +19,7 @@ package com.aicp.livewallpaper;
 import android.content.SharedPreferences;
 import android.preference.PreferenceDataStore;
 
-public class SharedPreferencesSettingsStore extends android.support.v7.preference.PreferenceDataStore
+public class SharedPreferencesSettingsStore extends androidx.preference.PreferenceDataStore
         implements PreferenceDataStore {
 
     private SharedPreferences mSharedPreferences;
