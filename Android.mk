@@ -1,3 +1,4 @@
+ifneq ($(EXCLUDE_LIVE_WALLPAPER),true)
 LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
@@ -35,3 +36,4 @@ LOCAL_PACKAGE_NAME := TilesWallpaperOverlay
 LOCAL_SDK_VERSION := current
 
 include $(BUILD_RRO_PACKAGE)
+endif
