@@ -22,6 +22,7 @@
         </activity>
         <service android:name="pit.livewallpaper.ColloredWallpaperService"
             android:label="@string/short_name"
+            android:exported="true"
             android:permission="android.permission.BIND_WALLPAPER">
             <intent-filter>
                 <action android:name="android.service.wallpaper.WallpaperService" />
