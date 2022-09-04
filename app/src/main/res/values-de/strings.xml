@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AICP Kacheln Live-Hintergrund</string>
+    <string name="short_name">AICP Kacheln</string>
+    <string name="straight">Gerade</string>
+    <string name="rand">Zufällig</string>
+    <string name="animSpeed">Animationsgeschwindigkeit</string>
+    <string name="motion">Bewegung</string>
+    <string name="sensors">Sensorbewegungen</string>
+    <string name="about">Über</string>
+    <string name="license">Lizenz</string>
+</resources>

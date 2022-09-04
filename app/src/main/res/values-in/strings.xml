@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ubin AICP Wallpaper Animasi</string>
+    <string name="short_name">Ubin AICP</string>
+    <string name="straight">Lurus</string>
+    <string name="rand">Acak</string>
+    <string name="animSpeed">Kecepatan Animasi</string>
+    <string name="motion">Gerakan</string>
+    <string name="sensors">Gerakan sensor</string>
+    <string name="about">Tentang</string>
+    <string name="license">Lisensi</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AICP Tiles Live Wallpaper</string>
+    <string name="short_name">AICP Tiles</string>
+    <string name="straight">Postupka</string>
+    <string name="rand">Náhodně</string>
+    <string name="animSpeed">Rychlost animace</string>
+    <string name="motion">Pohyb</string>
+    <string name="sensors">Pohyby snímače</string>
+    <string name="about">Informace</string>
+    <string name="license">Licence</string>
+</resources>

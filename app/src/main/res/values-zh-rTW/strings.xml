@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AICP 圖塊動態桌布</string>
+    <string name="short_name">AICP 圖塊</string>
+    <string name="straight">直線</string>
+    <string name="rand">隨機</string>
+    <string name="animSpeed">動畫速度</string>
+    <string name="motion">動感</string>
+    <string name="sensors">傳感器運動</string>
+    <string name="about">關於</string>
+    <string name="license">授權條款</string>
+</resources>
