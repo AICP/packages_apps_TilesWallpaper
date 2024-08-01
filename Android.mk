@@ -13,6 +13,10 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx.core_core \
     androidx.preference_preference
 
+LOCAL_OPTIONAL_USES_LIBRARIES := \
+    androidx.window.extensions \
+    androidx.window.sidecar
+
 LOCAL_PACKAGE_NAME := TilesWallpaper
 
 LOCAL_SDK_VERSION := current
