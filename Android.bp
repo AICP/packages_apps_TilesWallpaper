@@ -1,0 +1,33 @@
+android_app {
+    name: "TilesWallpaper",
+
+    manifest: "app/src/main/AndroidManifest.xml",
+    srcs: ["app/src/main/java/**/*.java"],
+    resource_dirs: ["app/src/main/res"],
+
+    static_libs: [
+        "androidx.core_core",
+        "androidx.preference_preference",
+    ],
+
+    optional_uses_libs: [
+        "androidx.window.extensions",
+        "androidx.window.sidecar",
+    ],
+
+    sdk_version: "current",
+
+    required: ["TilesWallpaperOverlay"],
+}
+
+runtime_resource_overlay {
+    name: "TilesWallpaperOverlay",
+
+    theme: "WallpaperOverlay",
+    product_specific: true,
+
+    resource_dirs: ["overlay/res"],
+    manifest: "overlay/AndroidManifest.xml",
+
+    sdk_version: "current",
+}
