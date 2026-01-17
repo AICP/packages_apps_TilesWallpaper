@@ -30,4 +30,5 @@ runtime_resource_overlay {
     manifest: "overlay/AndroidManifest.xml",
 
     sdk_version: "current",
+    system_ext_specific: true,
 }
