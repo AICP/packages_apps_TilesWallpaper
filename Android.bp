@@ -24,10 +24,10 @@ runtime_resource_overlay {
     name: "TilesWallpaperOverlay",
 
     theme: "WallpaperOverlay",
-    product_specific: true,
 
     resource_dirs: ["overlay/res"],
     manifest: "overlay/AndroidManifest.xml",
 
     sdk_version: "current",
+    system_ext_specific: true,
 }
