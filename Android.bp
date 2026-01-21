@@ -16,7 +16,7 @@ android_app {
     ],
 
     sdk_version: "current",
-
+    system_ext_specific: true,
     required: ["TilesWallpaperOverlay"],
 }
 
