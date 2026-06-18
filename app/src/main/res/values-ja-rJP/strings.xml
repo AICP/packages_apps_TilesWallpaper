@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AICP タイルライブ壁紙</string>
+    <string name="short_name">AICP タイル</string>
+    <string name="straight">ストレート</string>
+    <string name="rand">ランダム</string>
+    <string name="animSpeed">アニメーション速度</string>
+    <string name="motion">モーション</string>
+    <string name="sensors">センサーの動き</string>
+    <string name="about">概要</string>
+    <string name="license">ライセンス</string>
+</resources>

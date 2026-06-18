@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AICP 磁贴动态壁纸</string>
+    <string name="short_name">AICP 磁贴</string>
+    <string name="straight">直线</string>
+    <string name="rand">随机</string>
+    <string name="animSpeed">动画速度</string>
+    <string name="motion">动效</string>
+    <string name="sensors">传感器移动</string>
+    <string name="about">关于</string>
+    <string name="license">许可协议</string>
+</resources>

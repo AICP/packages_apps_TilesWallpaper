@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AICP Tiles élő háttérkép</string>
+    <string name="short_name">AICP Tiles</string>
+    <string name="straight">Egyenes</string>
+    <string name="rand">Random</string>
+    <string name="animSpeed">Animáció sebessége</string>
+    <string name="motion">Mozgás</string>
+    <string name="sensors">Eszköz-érzékelő mozgatás</string>
+    <string name="about">Névjegy</string>
+    <string name="license">Licensz</string>
+</resources>

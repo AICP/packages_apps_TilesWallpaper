@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AICP Canlı Duvar Kağıdı Kareleri</string>
+    <string name="short_name">AICP Kareleri</string>
+    <string name="straight">Düz</string>
+    <string name="rand">Rastgele</string>
+    <string name="animSpeed">Animasyon hızı</string>
+    <string name="motion">Hareket</string>
+    <string name="sensors">Sensör hareketleri</string>
+    <string name="about">Hakkında</string>
+    <string name="license">Lisans</string>
+</resources>

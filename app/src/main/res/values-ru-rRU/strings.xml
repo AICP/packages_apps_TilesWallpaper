@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AICP Плитки живые обои</string>
+    <string name="short_name">Плитки AICP</string>
+    <string name="straight">Прямо</string>
+    <string name="rand">Случайно</string>
+    <string name="animSpeed">Скорость анимации</string>
+    <string name="motion">Движение</string>
+    <string name="sensors">Движение датчиков</string>
+    <string name="about">Сведения</string>
+    <string name="license">Лицензия</string>
+</resources>

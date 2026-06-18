@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fondo de pantalla animado AICP Tiles</string>
+    <string name="short_name">AICP Tiles</string>
+    <string name="straight">Recto</string>
+    <string name="rand">Aleatorio</string>
+    <string name="animSpeed">Velocidad de animación</string>
+    <string name="motion">Movimiento</string>
+    <string name="sensors">Movimientos del sensor</string>
+    <string name="about">Acerca de</string>
+    <string name="license">Licencia</string>
+</resources>
